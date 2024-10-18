@@ -1,7 +1,7 @@
 import os
 import cv2
 from ultralytics import YOLO
-
+print(os.getcwd())
 
 # Function to perform object detection on each frame
 def detect_objects_in_frames(model, input_folder, output_folder, detected_folder):
@@ -38,12 +38,12 @@ def detect_objects_in_frames(model, input_folder, output_folder, detected_folder
 
 
 # Initialize YOLOv8 model (pre-trained on COCO dataset)
-model = YOLO('yolov8m.pt')  # Use 'yolov8n.pt', 'yolov8s.pt', etc., for different model sizes
+model = YOLO('YOLOv8m.pt')  # Use 'yolov8n.pt' - 3.2M, 'yolov8s.pt' - 11.2M, 'YOLOv8m.pt' - 25.9M, 'YOLOv8l.pt' - 43.7M , 'YOLOv8x' - 68.2M for different model sizes
 
 # Input and output directories
-input_folder = "extracted_frames"
-output_folder = "annotated_frames"
-detected_folder = "frames_with_objects"  # New folder for frames with detected objects
+input_folder = "01_extracted_frames"
+output_folder = "02_annotated_frames"
+detected_folder = "02_frames_with_objects"  # New folder for frames with detected objects
 
 # Perform object detection on each extracted frame
 detect_objects_in_frames(model, input_folder, output_folder, detected_folder)

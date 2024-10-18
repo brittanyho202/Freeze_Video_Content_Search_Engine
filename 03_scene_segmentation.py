@@ -45,7 +45,7 @@ def split_video_into_scenes(video_path, output_folder, threshold=15.0):
 
 # Input video and output folder
 video_path = "duck.mp4"
-output_folder = "scenes"
+output_folder = "03_scenes_segmented"
 
 # Segment the video into scenes
 split_video_into_scenes(video_path, output_folder)
