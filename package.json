@@ -1,0 +1,14 @@
+{
+  "name": "freeze_video_content_search_engine-",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brittanyho202/Freeze_Video_Content_Search_Engine.git"
+  },
+  "private": true
+}
